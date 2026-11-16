@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Structures Mini Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Data Structures Mini Project</h1>
+
+<nav>
+    <button onclick="showSection('stack')">Stack</button>
+    <button onclick="showSection('queue')">Queue</button>
+    <button onclick="showSection('hanoi')">Tower of Hanoi</button>
+    <button onclick="showSection('list')">Singly Linked List</button>
+</nav>
+
+<section id="stack">
+    <h2>Stack (LIFO)</h2>
+    <input type="number" id="stackValue" placeholder="Enter number">
+    <input type="number" id="stackMax" placeholder="Maximum size">
+    <button onclick="push()">Push</button>
+    <button onclick="pop()">Pop</button>
+    <button onclick="peek()">Peek</button>
+    <button onclick="clearStack()">Clear</button>
+    <p id="stackOutput"></p>
+    <div id="stackDisplay"></div>
+</section>
+
+<section id="queue">
+    <h2>Queue (FIFO)</h2>
+    <input type="number" id="queueValue" placeholder="Enter number">
+    <input type="number" id="queueMax" placeholder="Maximum size">
+    <button onclick="enqueue()">ENQ</button>
+    <button onclick="dequeue()">DQ</button>
+    <button onclick="front()">Front</button>
+    <button onclick="rear()">Rear</button>
+    <button onclick="clearQueue()">Clear</button>
+    <p id="queueOutput"></p>
+    <div id="queueDisplay"></div>
+</section>
+
+<section id="hanoi">
+    <h2>Tower of Hanoi</h2>
+    <input type="number" id="disks" placeholder="Number of disks" min="1">
+    <button onclick="startHanoi()">Start</button>
+    <button onclick="nextHanoi()">Next Move</button>
+    <button onclick="autoHanoi()">Auto Solve</button>
+    <button onclick="resetHanoi()">Reset</button>
+    <p id="hanoiOutput"></p>
+    <div id="hanoiDisplay"></div>
+</section>
+
+<section id="list">
+    <h2>Singly Linked List</h2>
+    <input type="number" id="listValue" placeholder="Enter number">
+    <button onclick="insertBeginning()">Insert Beginning</button>
+    <button onclick="insertEnd()">Insert End</button>
+    <button onclick="deleteBeginning()">Delete Beginning</button>
+    <button onclick="deleteEnd()">Delete End</button>
+    <button onclick="searchNode()">Search</button>
+    <button onclick="clearList()">Clear</button>
+    <p id="listOutput"></p>
+    <div id="listDisplay"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
